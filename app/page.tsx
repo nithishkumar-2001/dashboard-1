@@ -2,11 +2,9 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import css from "@/app/ui/home.module.css";
-import { inter, oswald, lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
 
 export default function Page() {
-  console.log(lusitana);
 
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -19,9 +17,9 @@ export default function Page() {
           <div
             className={css.shape}
           />
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`} >
-            <strong>Welcome to Acme.</strong> <span className={`${oswald.className} antialiased`}>This is the example for the</span>{' '}
-            <a href="https://nextjs.org/learn/" className={`text-blue-500 ${inter.className} antialiased`}>
+          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`} >
+            <strong>Welcome to Acme.</strong> <span>This is the example for the</span>{' '}
+            <a href="https://nextjs.org/learn/" className={`text-blue-500`}>
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
