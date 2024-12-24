@@ -19,6 +19,18 @@ const config: Config = {
         },
       },
     },
+    screens: {
+      'sm': '576px',
+      // => @media (min-width: 576px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '992px',
+      'xl': '1200px',
+      'xxl': '1400px',
+      // => @media (min-width: 1440px) { ... }
+    },
     keyframes: {
       shimmer: {
         '100%': {
