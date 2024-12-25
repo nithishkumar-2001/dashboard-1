@@ -3,13 +3,14 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import css from "@/app/ui/home.module.css";
 import Image from 'next/image';
+import { lusitana } from '@/app/ui/fonts';
 
 export default function Page() {
 
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        {/* <AcmeLogo /> */}
+        <AcmeLogo />
 
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -17,7 +18,7 @@ export default function Page() {
           <div
             className={css.shape}
           />
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`} >
+          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className}`} >
             <strong>Welcome to Acme.</strong> <span>This is the example for the</span>{' '}
             <a href="https://nextjs.org/learn/" className={`text-blue-500`}>
               Next.js Learn Course
@@ -39,6 +40,7 @@ export default function Page() {
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
+            priority
           />
           <Image
             src="/hero-mobile.png"
